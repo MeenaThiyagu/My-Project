@@ -1,6 +1,6 @@
 # My-Project
 
-Company has many products which one is "Mobile". Association between Company and Mobile.
+Company has many products in which one available in the code is "Mobile". Association between Company and Mobile is introduced.
 Customer cannot exists for a company if he didn't purchase the only product "Mobile".
 Using mobile, customer can make calls.
 It could be either through Skype/Whatsapp where he is asked to enter the number.
