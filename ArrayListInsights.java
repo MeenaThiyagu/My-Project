@@ -51,6 +51,34 @@ public class ArrayListInsights {
 		
 		Collections.swap(copiedList, 1,2);
 		System.out.println("The list items once swapping 1 and 2  in list are "+copiedList);
+		
+		
+		colorList.addAll(copiedList);//Join the array list=> List 2 is added to lis1
+		System.out.println("After joining, list1 details are"+colorList);
+		System.out.println("After joining, list2 details are"+copiedList);
+		
+		copiedList.clear();
+		//remove();
+		System.out.println("The second list, copiedList contents after removing it all are, "+copiedList);
+		
+		//Is empty or not
+		
+		if(copiedList.isEmpty())
+			System.out.println("The arraylist is empty :(");
+		else
+		System.out.println("The arraylist is not empty :)");
+		
+		System.out.println("The size of array list before trimming is "+colorList.size());//Find the capacity of array
+		
+		colorList.trimToSize();
+		System.out.println("The size of array list after trimming is "+colorList.size());
+	
+		
+		System.out.println("The size of array list before trimming is ");
+		colorList.ensureCapacity(14);//Increase the capacity of array-it can surely store 14 elements
+		
+		colorList.trimToSize();
+		System.out.println("The size of array list after trimming is "+colorList.size());
 	}
 
 }
