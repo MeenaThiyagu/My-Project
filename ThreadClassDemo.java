@@ -35,6 +35,7 @@ public class ThreadClassDemo extends Thread {
 		ruObj.setPriority(MAX_PRIORITY);
 		thObj.setPriority(MIN_PRIORITY);
 		
+		//Finding all the active threads
 		Set<Thread> threadSet = Thread.getAllStackTraces().keySet();
 		
 		for (Thread t : threadSet) {
